@@ -20,7 +20,7 @@ import Container from "./Container"
 
 export function TopNav() {
   return (
-    <header className="flex flex-col items-center left-0 right-0 top-0 fixed bg-white">
+    <header className="flex flex-col items-center left-0 right-0 top-0 sticky z-50 bg-white">
       <div className="max-w-5xl w-full flex flex-row items-center py-2 px-4">
         <Link href="/" className="font-semibold">
           준랩
@@ -113,6 +113,9 @@ export function TopNav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        <Link href="/login" className="text-sm ml-auto hover:underline">
+          로그인
+        </Link>
       </div>
     </header>
   )
