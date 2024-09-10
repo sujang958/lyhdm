@@ -20,7 +20,8 @@ export default function RootLayout({
 
         <Container className="flex flex-row gap-x-12">
           <main className="flex-1 w-min">{children}</main>
-          <aside className="fixed top-24 right-12">asdf</aside>
+          {/* h-min is the life saver */}
+          <aside className="sticky top-24 right-12 h-min">asdf</aside>
         </Container>
         {/* < <main className="sticky top-24 flex flex-col items-center">
           <div className="p-12 max-w-5xl w-full">>
