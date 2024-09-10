@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <section>
+    <section className="w-full">
       <p className="text-3xl font-semibold">홈</p>
       <div className="py-4"></div>
       <div className="flex flex-col gap-y-4">
@@ -33,8 +33,8 @@ export default function Home() {
             <p className="text-xs text-neutral-400">2일 전</p>
           </div>
 
-          <Button variant="secondary" className="w-min" size="sm">
-            413. 다음 팰린드롬 수 찾기
+          <Button variant="secondary" className="max-w-36" size="sm">
+            <p className="truncate">413. 다음 팰린드롬 수 찾기</p>
           </Button>
         </article>
       </div>

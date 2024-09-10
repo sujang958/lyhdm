@@ -19,7 +19,7 @@ export default function RootLayout({
         <TopNav />
 
         <Container className="flex flex-row gap-x-12">
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 w-min">{children}</main>
           <aside className="fixed top-24 right-12">asdf</aside>
         </Container>
         {/* < <main className="sticky top-24 flex flex-col items-center">
