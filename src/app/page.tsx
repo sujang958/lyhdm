@@ -1,5 +1,10 @@
 import Container from "@/components/layouts/Container"
 import { Button } from "@/components/ui/Button"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/HoverCard"
 import Image from "next/image"
 
 export default function Home() {
@@ -18,7 +23,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-y-2"></div>
         </div> */}
-        <article className="grid grid-cols-[.1fr_2fr_1fr] gap-3 items-center">
+        <article className="grid grid-cols-[.15fr_2fr_1fr] gap-3 items-center">
           <Image
             src="/popcat.jpg"
             alt="pfp"
@@ -33,8 +38,28 @@ export default function Home() {
             <p className="text-xs text-neutral-400">2일 전</p>
           </div>
 
-          <Button variant="secondary" className="max-w-36" size="sm">
-            <p className="truncate">413. 다음 팰린드롬 수 찾기</p>
+          <Button variant="secondary" className="max-w-36 ml-auto" size="sm">
+            <HoverCard openDelay={100}>
+              <HoverCardTrigger className="truncate">
+                413. 다음 팰린드롬 수 찾기
+              </HoverCardTrigger>
+              <HoverCardContent className="py-2 px-3 items-start flex flex-col">
+                <p className="text-sm font-medium">
+                  413. 다음 팰린드롬 수 찾기
+                </p>
+                <div className="flex flex-row items-center gap-x-1 mt-2">
+                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                    많은 조건 분기
+                  </p>
+                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                    구현
+                  </p>
+                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                    문자열
+                  </p>
+                </div>
+              </HoverCardContent>
+            </HoverCard>
           </Button>
         </article>
       </div>

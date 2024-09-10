@@ -21,13 +21,10 @@ export default function RootLayout({
         <Container className="flex flex-row gap-x-12">
           <main className="flex-1 w-min">{children}</main>
           {/* h-min is the life saver */}
-          <aside className="sticky top-24 right-12 h-min">asdf</aside>
+          <aside className="sticky top-24 right-12 h-min min-w-52 max-w-sm">
+            asdf
+          </aside>
         </Container>
-        {/* < <main className="sticky top-24 flex flex-col items-center">
-          <div className="p-12 max-w-5xl w-full">>
-           
-          </div>
-        </main> */}
       </body>
     </html>
   )
