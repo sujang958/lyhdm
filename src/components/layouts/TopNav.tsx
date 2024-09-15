@@ -15,12 +15,16 @@ import {
 } from "@/components/ui/NavigationMenu"
 import Image from "next/image"
 import Router from "next/router"
-import { DrawingPinFilledIcon } from "@radix-ui/react-icons"
+import { DrawingPinFilledIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import Container from "./Container"
+import { Button } from "@/components/ui/Button"
+import { useTheme } from "next-themes"
 
 export function TopNav() {
+  const { setTheme, theme, themes } = useTheme()
+
   return (
-    <header className="flex flex-col items-center left-0 right-0 top-0 sticky z-50 bg-white">
+    <header className="flex flex-col items-center left-0 right-0 top-0 sticky z-50 bg-white dark:bg-black dark:text-white">
       <div className="max-w-5xl w-full flex flex-row items-center py-2 px-4">
         <Link href="/" className="font-semibold">
           준랩
@@ -113,7 +117,22 @@ export function TopNav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/login" className="text-sm ml-auto hover:underline">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => {
+            const isDark = theme
+              ? theme == "dark"
+              : document.documentElement.classList.contains("dark")
+
+            setTheme(isDark ? "light" : "dark")
+          }}
+          className="overflow-hidden relative ml-auto mr-4"
+        >
+          <SunIcon className="size-4 transition duration-500 dark:translate-x-0 translate-x-[200%] absolute" />
+          <MoonIcon className="size-4 transition duration-500 dark:-translate-x-[200%] absolute translate-x-0" />
+        </Button>
+        <Link href="/login" className="text-sm">
           로그인
         </Link>
       </div>
