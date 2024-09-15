@@ -10,19 +10,9 @@ import Image from "next/image"
 export default function Home() {
   return (
     <section className="w-full">
-      <p className="text-3xl font-semibold">홈</p>
+      <p className="text-2xl font-semibold">홈</p>
       <div className="py-4"></div>
       <div className="flex flex-col gap-y-4">
-        {/* <div className="flex flex-row items-center">
-          <Image
-            src="/popcat.jpg"
-            alt="pfp"
-            width={64}
-            height={64}
-            className="size-8 rounded"
-          />
-          <div className="flex flex-col gap-y-2"></div>
-        </div> */}
         <article className="grid grid-cols-[.15fr_2fr_1fr] gap-3 items-center">
           <Image
             src="/popcat.jpg"
@@ -48,13 +38,13 @@ export default function Home() {
                   413. 다음 팰린드롬 수 찾기
                 </p>
                 <div className="flex flex-row items-center gap-x-1 mt-2">
-                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                  <p className="text-[0.7rem] rounded-xl bg-secondary-background px-3 py-0.5 text-popover-foreground">
                     많은 조건 분기
                   </p>
-                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                  <p className="text-[0.7rem] rounded-xl bg-secondary-background px-3 py-0.5 text-popover-foreground">
                     구현
                   </p>
-                  <p className="text-[0.7rem] rounded-xl bg-neutral-100 px-3 py-0.5 text-neutral-500">
+                  <p className="text-[0.7rem] rounded-xl bg-secondary-background px-3 py-0.5 text-popover-foreground">
                     문자열
                   </p>
                 </div>

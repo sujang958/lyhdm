@@ -24,8 +24,8 @@ export function TopNav() {
   const { setTheme, theme, themes } = useTheme()
 
   return (
-    <header className="flex flex-col items-center left-0 right-0 top-0 sticky z-50 bg-white dark:bg-black dark:text-white">
-      <div className="max-w-5xl w-full flex flex-row items-center py-2 px-4">
+    <header className="flex flex-col items-center left-0 right-0 top-0 sticky z-50 bg-background border-b border-border">
+      <div className="max-w-5xl w-full flex flex-row items-center py-2 px-6">
         <Link href="/" className="font-semibold">
           준랩
         </Link>
