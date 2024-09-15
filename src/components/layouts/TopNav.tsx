@@ -81,7 +81,7 @@ export function TopNav() {
               <NavigationMenuTrigger>대회</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3 flex flex-col gap-y-2.5 p-3 bg-neutral-50 rounded-lg">
+                  <li className="row-span-3 flex flex-col gap-y-2.5 px-3 py-2.5 bg-ba rounded-lg bg-secondary-background">
                     <p className="text-lg font-semibold flex flex-row items-center gap-x-2 mb-0.5">
                       <DrawingPinFilledIcon className="size-4" /> 최근 대회
                     </p>
