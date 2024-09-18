@@ -34,7 +34,6 @@ export default function RootLayout({
             <Sidebar />
           </Container>
         </ThemeProvider>
-        <TopNav />
       </body>
     </html>
   )

@@ -7,7 +7,7 @@ const Container: FC<PropsWithChildren & { className?: string }> = ({
 }) => {
   return (
     <section className="flex flex-col items-center">
-      <div className={twMerge("p-12 max-w-5xl w-full", className)}>
+      <div className={twMerge("p-12 max-w-6xl w-full", className)}>
         {children}
       </div>
     </section>

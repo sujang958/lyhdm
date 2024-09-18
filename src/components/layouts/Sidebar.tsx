@@ -6,7 +6,7 @@ import Image from "next/image"
 
 const Sidebar: FC = () => {
   return (
-    <aside className="sticky top-24 right-12 h-min min-w-56 max-w-sm space-y-6">
+    <aside className="sticky top-24 right-12 h-min min-w-56 max-w-64 w-full space-y-6">
       <section className="bg-secondary-background rounded-lg p-3">
         <header className="flex flex-row items-center gap-x-3.5">
           <Image
